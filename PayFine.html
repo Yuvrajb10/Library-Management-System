@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Fine</title>
+    <link rel="stylesheet" href="PayFinestyles.css"> <!-- Add your CSS file for styling -->
+</head>
+<body>
+    <header>
+        <h1>Chart | Transactions</h1>
+        <nav>
+            <a href="/home">Home</a>
+            <a href="/logout">Log Out</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Pay Fine</h2>
+        <form id="payFineForm" onsubmit="handlePayFine(event)">
+            <div>
+                <label for="bookName">Enter Book Name:</label>
+                <input type="text" id="bookName" name="bookName" required>
+            </div>
+
+            <div>
+                <label for="authorName">Enter Author:</label>
+                <input type="text" id="authorName" name="authorName" required>
+            </div>
+
+            <div>
+                <label for="serialNumber">Serial Number:</label>
+                <input type="text" id="serialNumber" name="serialNumber" required>
+            </div>
+
+            <div>
+                <label for="issueDate">Issue Date:</label>
+                <input type="date" id="issueDate" name="issueDate" required>
+            </div>
+
+            <div>
+                <label for="returnDate">Return Date:</label>
+                <input type="date" id="returnDate" name="returnDate" required>
+            </div>
+
+            <div>
+                <label for="actualReturnDate">Actual Return Date:</label>
+                <input type="date" id="actualReturnDate" name="actualReturnDate" required>
+            </div>
+
+            <div>
+                <label for="fineCalculated">Fine Calculated:</label>
+                <input type="text" id="fineCalculated" name="fineCalculated" value="0" readonly>
+            </div>
+
+            <div>
+                <label for="finePaid">Fine Paid:</label>
+                <input type="checkbox" id="finePaid" name="finePaid">
+            </div>
+
+            <div>
+                <label for="remarks">Remarks (Optional):</label>
+                <textarea id="remarks" name="remarks"></textarea>
+            </div>
+
+            <button type="submit">Pay Fine</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script> <!-- Add your JavaScript file -->
+</body>
+</html>

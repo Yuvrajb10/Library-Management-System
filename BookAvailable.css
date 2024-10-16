@@ -1,0 +1,63 @@
+.book-availability-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .book-availability,
+  .issue-book,
+  .return-book,
+  .pay-fine {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  .logout {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logout button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .logout button:hover {
+    opacity: 0.9;
+  }
+  

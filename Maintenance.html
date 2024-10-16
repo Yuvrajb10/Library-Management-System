@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance</title>
+    <link rel="stylesheet" href="Maintestyles.css"> <!-- Link to your CSS file for styling -->
+</head>
+<body>
+    <header>
+        <h1>Chart | Maintenance</h1>
+        <nav>
+            <a href="/home">Home</a>
+            <a href="/logout">Log Out</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Housekeeping</h2>
+        <h3>Membership</h3>
+        <div class="maintenance-option">
+            <a href="/membership/add">Add</a>
+            <a href="/membership/update">Update</a>
+        </div>
+
+        <h3>Books/Movies</h3>
+        <div class="maintenance-option">
+            <a href="/books-movies/add">Add</a>
+            <a href="/books-movies/update">Update</a>
+        </div>
+
+        <h3>User Management</h3>
+        <div class="maintenance-option">
+            <a href="/user-management/add">Add</a>
+            <a href="/user-management/update">Update</a>
+        </div>
+    </main>
+
+    <footer>
+        <button class="logout-button" onclick="logout()">Log Out</button>
+    </footer>
+
+    <script src="Maintescript.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

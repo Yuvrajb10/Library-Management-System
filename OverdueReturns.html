@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overdue Returns</title>
+    <link rel="stylesheet" href="ORstyles.css"> <!-- Link to your CSS file for styling -->
+</head>
+<body>
+    <header>
+        <h1>Chart | Reports</h1>
+        <nav>
+            <a href="/home">Home</a>
+            <a href="/logout">Log Out</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Overdue Returns</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Serial No Book</th>
+                    <th>Name of Book</th>
+                    <th>Membership Id</th>
+                    <th>Date of Issue</th>
+                    <th>Date of Return</th>
+                    <th>Fine Calculations</th>
+                </tr>
+            </thead>
+            <tbody id="overdue-returns-list">
+                <!-- Overdue returns will be dynamically populated here -->
+            </tbody>
+        </table>
+
+       
+    </main>
+
+    <footer>
+        <button class="logout-button" onclick="logout()">Log Out</button>
+    </footer>
+
+    <script src="ORscript.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

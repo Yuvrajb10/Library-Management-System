@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Membership</title>
+    <link rel="stylesheet" href="addmembershipstyles.css"> <!-- Link to your CSS file for styling -->
+</head>
+<body>
+    <header>
+        <h1>Chart | Add Membership</h1>
+        <nav>
+            <a href="/home">Home</a>
+            <a href="/logout">Log Out</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Add Membership</h2>
+        <form id="addMembershipForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="contactName">Contact Name:</label>
+            <input type="text" id="contactName" name="contactName" required>
+
+            <label for="contactAddress">Contact Address:</label>
+            <input type="text" id="contactAddress" name="contactAddress" required>
+
+            <label for="aadhaarCardNo">Aadhar Card No:</label>
+            <input type="text" id="aadhaarCardNo" name="aadhaarCardNo" required>
+
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" name="startDate" required>
+
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate" name="endDate" required>
+
+            <h3>Membership Duration:</h3>
+            <label>
+                <input type="radio" name="membershipDuration" value="6 months" checked>
+                Six Months
+            </label>
+            <label>
+                <input type="radio" name="membershipDuration" value="1 year">
+                One Year
+            </label>
+            <label>
+                <input type="radio" name="membershipDuration" value="2 years">
+                Two Years
+            </label>
+
+            <button type="submit">Add Membership</button>
+        </form>
+    </main>
+
+    <footer>
+        <button class="logout-button" onclick="logout()">Log Out</button>
+    </footer>
+
+    <script src="addmembershipscript.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

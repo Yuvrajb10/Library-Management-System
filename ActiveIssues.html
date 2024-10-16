@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Issues</title>
+    <link rel="stylesheet" href="AIscript.css"> <!-- Link to your CSS file for styling -->
+</head>
+<body>
+    <header>
+        <h1>Chart | Reports</h1>
+        <nav>
+            <a href="/home">Home</a>
+            <a href="/logout">Log Out</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Active Issues</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Serial No Book/Movie</th>
+                    <th>Name of Book/Movie</th>
+                    <th>Membership Id</th>
+                    <th>Date of Issue</th>
+                    <th>Date of Return</th>
+                </tr>
+            </thead>
+            <tbody id="active-issues-list">
+                <!-- Active issues will be dynamically populated here -->
+            </tbody>
+        </table>
+
+      
+    </main>
+
+    <footer>
+        <button class="logout-button" onclick="logout()">Log Out</button>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="AIscript.js"></script> 
+</body>
+</html>

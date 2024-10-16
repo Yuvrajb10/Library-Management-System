@@ -1,0 +1,89 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50; /* Dark green */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 600px; /* Center the form */
+    margin: 20px auto;
+    padding: 20px;
+    background: white; /* White background for the form */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form div {
+    margin-bottom: 15px; /* Space between form fields */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold; /* Bold labels for clarity */
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Slightly rounded corners */
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+    border-color: #4CAF50; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    background-color: #4CAF50; /* Button color */
+    color: white; /* Button text color */
+    padding: 10px 15px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded button */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 100%; /* Full width button */
+    font-size: 16px; /* Larger text */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}

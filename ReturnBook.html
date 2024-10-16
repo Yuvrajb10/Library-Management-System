@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Book</title>
+    <link rel="stylesheet" href="ReturnBookstyles.css"> <!-- Add your CSS file for styling -->
+</head>
+<body>
+    <header>
+        <h1>Chart | Transactions</h1>
+        <nav>
+            <a href="/home">Home</a>
+            <a href="/logout">Log Out</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Return Book</h2>
+        <form id="returnBookForm" onsubmit="handleReturnBook(event)">
+            <div>
+                <label for="bookName">Enter Book Name:</label>
+                <input type="text" id="bookName" name="bookName" required>
+            </div>
+
+            <div>
+                <label for="authorName">Enter Author:</label>
+                <textarea id="authorName" name="authorName" required></textarea>
+            </div>
+
+            <div>
+                <label for="serialNumber">Serial Number:</label>
+                <input type="text" id="serialNumber" name="serialNumber" required>
+            </div>
+
+            <div>
+                <label for="issueDate">Issue Date:</label>
+                <input type="date" id="issueDate" name="issueDate" required>
+            </div>
+
+            <div>
+                <label for="returnDate">Return Date:</label>
+                <input type="date" id="returnDate" name="returnDate" required>
+            </div>
+
+            <div>
+                <label for="remarks">Remarks (Optional):</label>
+                <textarea id="remarks" name="remarks"></textarea>
+            </div>
+
+            <button type="submit">Return Book</button>
+        </form>
+    </main>
+
+    <script src="RBscript.js"></script> <!-- Add your JavaScript file -->
+</body>
+</html>

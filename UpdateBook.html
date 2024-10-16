@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Book/Movie</title>
+    <link rel="stylesheet" href="UpdateBookstyles.css"> <!-- Link to your CSS file for styling -->
+</head>
+<body>
+    <header>
+        <h1>Chart | Update Book/Movie</h1>
+        <nav>
+            <a href="/home">Home</a>
+            <a href="/logout">Log Out</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Update Book/Movie</h2>
+        <form id="updateBookForm">
+            <h3>Type:</h3>
+            <label>
+                <input type="radio" name="bookMovieType" value="Book" checked>
+                Book
+            </label>
+            <label>
+                <input type="radio" name="bookMovieType" value="Movie">
+                Movie
+            </label>
+
+            <label for="bookMovieName">Book/Movie Name:</label>
+            <input type="text" id="bookMovieName" name="bookMovieName" required>
+
+            <label for="serialNo">Serial No:</label>
+            <input type="text" id="serialNo" name="serialNo" required>
+
+            <label for="status">Status:</label>
+            <select id="status" name="status" required>
+                <option value="">Select Status</option>
+                <option value="Available">Available</option>
+                <option value="Unavailable">Unavailable</option>
+                <option value="Reserved">Reserved</option>
+            </select>
+
+            <label for="updateDate">Update Date:</label>
+            <input type="date" id="updateDate" name="updateDate" required>
+
+            <button type="submit">Update Book/Movie</button>
+        </form>
+    </main>
+
+    <footer>
+        <button class="logout-button" onclick="logout()">Log Out</button>
+    </footer>
+
+    <script src="UpdateBookscript.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

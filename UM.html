@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Membership</title>
+    <link rel="stylesheet" href="UMstyles.css"> <!-- Link to your CSS file for styling -->
+</head>
+<body>
+    <header>
+        <h1>Chart | Update Membership</h1>
+        <nav>
+            <a href="/home">Home</a>
+            <a href="/logout">Log Out</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Update Membership</h2>
+        <form id="updateMembershipForm">
+            <label for="membershipNumber">Membership Number:</label>
+            <input type="text" id="membershipNumber" name="membershipNumber" required>
+
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" name="startDate" required>
+
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate" name="endDate" required>
+
+            <h3>Membership Extension:</h3>
+            <label>
+                <input type="radio" name="membershipExtension" value="6 months" checked>
+                Six Months
+            </label>
+            <label>
+                <input type="radio" name="membershipExtension" value="1 year">
+                One Year
+            </label>
+            <label>
+                <input type="radio" name="membershipExtension" value="2 years">
+                Two Years
+            </label>
+
+            <h3>Membership Removal:</h3>
+            <label>
+                <input type="radio" name="membershipRemoval" value="removeMembership">
+                Remove Membership
+            </label>
+
+            <button type="submit">Update Membership</button>
+        </form>
+    </main>
+
+    <footer>
+        <button class="logout-button" onclick="logout()">Log Out</button>
+    </footer>
+
+    <script src="UMscrip.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
